@@ -20,64 +20,6 @@ seqList = []
 seqLoop = True
 clickLoop = False
 
-# while True:
-#     while seqLoop:
-#         if(len(seqList) != int(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[1]/span/span[2]').text)):
-            
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[1]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[1]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[2]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[2]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[3]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[3]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[1]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[1]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[2]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[2]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[3]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[2]/div[3]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[3]/div[1]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[3]/div[1]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[1]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[3]/div[2]'))
-
-#             if(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[1]/div[1]').get_attribute('class') == 'square active'):
-#                 time.sleep(.1)
-#                 seqList.append(driver.find_element_by_xpath('//*[@id="root"]/div/div[4]/div[1]/div/div/div/div[2]/div/div[3]/div[3]'))
-          
-#             time.sleep(.3)
-#             print(seqList)
-#         else:
-#             clickLoop = True
-#             seqLoop = False
-#             print("seqloop end")
-
-#     time.sleep(1)
-#     while clickLoop:
-#         for x in seqList:
-#             x.click()
-#             print(x)
-#         seqList = []
-#         seqLoop = True
-#         time.sleep(.5)
-#         clickLoop = False
-#         print("clickloop end")
-
 def run():
 
     tiles = driver.find_elements_by_css_selector("div.square")
